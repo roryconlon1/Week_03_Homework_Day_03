@@ -4,16 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     <title>Football Shop - {{title}}</title>
 </head>
 <body>
-    <h1>Orders:</h1>
+    <h1>All Orders:</h1>
     {% for person in all_people %}
         <section>
             <p>
-                <b>{{person.customer_name}}: </b>{{person.order_date}} : <b>{{person.quantity}} x </b><b>{{person.club_name}}</b> top(s)
+                <b>{{person.customer_name}}: </b>{{person.order_date}} : <b>{{person.quantity}} x </b><b>{{person.club_name}}</b> top(s) 
             </p>
         </section>
     {% endfor %}
+    <p>
+        <a href="order_number">THIS DOESNT WORK</a>
+    </p>
+    
 </body>
 </html>

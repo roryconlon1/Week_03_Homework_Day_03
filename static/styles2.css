@@ -1,0 +1,20 @@
+body {
+    margin: 0%;
+    background-color: red;
+    font-size: larger;
+    font-family: fantasy;
+}
+
+body > h1 {
+    margin-top: 2%;
+    margin-left: 18%;
+    text-decoration: underline;
+    color: white;
+}
+
+body > section {
+    margin-top: 5%;
+    text-align: center;
+    color: black
+    ;
+}
