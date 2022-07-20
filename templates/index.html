@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Shop - {{title}}</title>
+</head>
+<body>
+    <h1>Orders:</h1>
+    {% for person in all_people %}
+        <section>
+            <p>
+                <b>{{person.customer_name}}: </b>{{person.order_date}} : <b>{{person.quantity}} x </b><b>{{person.club_name}}</b> top(s)
+            </p>
+        </section>
+    {% endfor %}
+</body>
+</html>
